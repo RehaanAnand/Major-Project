@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StudyStation Dashboard</title>
+  <link rel="stylesheet" href="DASHBOARD CSS.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <nav class="dashboard-nav">
+    <div class="nav-brand">
+      <img src="logo.png" alt="StudyStation" class="logo">
+    </div>
+    <div class="nav-links">
+      <a href="#resources" class="active"><i class="fas fa-book"></i> Resources</a>
+      <a href="#videos"><i class="fas fa-play-circle"></i> Videos</a>
+      <a href="#tests"><i class="fas fa-edit"></i> Practice Tests</a>
+      <a href="#progress"><i class="fas fa-chart-line"></i> Progress</a>
+      <a href="#schedule"><i class="fas fa-calendar-alt"></i> Study Plan</a>
+    </div>
+    <div class="nav-user">
+      <img src="user-avatar.png" class="user-avatar">
+      <div class="user-dropdown">
+        <span>John Doe</span>
+        <i class="fas fa-caret-down"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="dashboard-container">
+
+    <section class="welcome-banner">
+      <h1>Welcome back, John!</h1>
+      <p>You've studied <strong>4 subjects</strong> this week. Keep it up!</p>
+      <div class="study-streak">🔥 7-day streak</div>
+    </section>
+
+    <section class="quick-actions">
+      <div class="action-card">
+        <i class="fas fa-clock"></i>
+        <h3>Continue Studying</h3>
+        <p>Maths - Algebra II</p>
+      </div>
+      <div class="action-card">
+        <i class="fas fa-calendar-check"></i>
+        <h3>Upcoming Tests</h3>
+        <p>2 tests this week</p>
+      </div>
+      <div class="action-card">
+        <i class="fas fa-trophy"></i>
+        <h3>Your Achievements</h3>
+        <p>3 badges earned</p>
+      </div>
+    </section>
+
+    <section class="subjects-section">
+      <h2>Your Subjects</h2>
+      <div class="subject-cards">
+        <div class="subject-card math">
+          <h3>Mathematics</h3>
+          <div class="progress-bar" style="width: 75%"></div>
+          <p>75% Mastery</p>
+        </div>
+        <div class="subject-card science">
+          <h3>Science</h3>
+          <div class="progress-bar" style="width: 60%"></div>
+          <p>60% Mastery</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="activity-section">
+      <h2>Recent Activity</h2>
+      <div class="activity-list">
+        <div class="activity-item">
+          <i class="fas fa-check-circle"></i>
+          <p>Completed <strong>Algebra Quiz</strong> with 85%</p>
+          <span class="time">2 hours ago</span>
+        </div>
+        <div class="activity-item">
+          <i class="fas fa-play"></i>
+          <p>Watched <strong>Chemical Bonds</strong> video</p>
+          <span class="time">Yesterday</span>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
