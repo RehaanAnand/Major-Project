@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: cornflowerblue;
+    background-color: #3f37c9;
 }
 
 .wrapper {
@@ -96,6 +96,10 @@ body {
     font-size: 16px;
     color: black;
     font-weight: 600;
+}
+
+.btn:hover {
+    background-color: lightblue;
 }
 
 .wrapper .signup-link {
