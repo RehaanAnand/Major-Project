@@ -106,14 +106,6 @@
     position: relative;
   }
   
-  .user-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--gray);
-  }
-  
   .user-dropdown {
     display: flex;
     align-items: center;
@@ -157,27 +149,6 @@
   .welcome-banner h1 {
     font-size: 2.2rem;
     margin-bottom: 0.5rem;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .welcome-banner p {
-    font-size: 1.1rem;
-    opacity: 0.9;
-    margin-bottom: 1.5rem;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .study-streak {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 0.5rem 1.2rem;
-    border-radius: 2rem;
-    font-weight: 600;
-    backdrop-filter: blur(5px);
     position: relative;
     z-index: 1;
   }
@@ -226,11 +197,6 @@
     color: var(--text);
   }
   
-  .action-card p {
-    color: var(--text-light);
-    font-size: 0.95rem;
-  }
-  
   .subjects-section {
     margin-bottom: 2.5rem;
   }
@@ -277,39 +243,9 @@
     z-index: 1;
   }
   
-  .progress-container {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .progress-bar {
-    height: 8px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    margin: 0.5rem 0;
-    overflow: hidden;
-  }
-  
-  .progress-bar::after {
-    content: '';
-    display: block;
-    height: 100%;
-    background: var(--white);
-    border-radius: 4px;
-    width: 0;
-    animation: progressAnimation 1.5s ease-out forwards;
-  }
-  
   @keyframes progressAnimation {
     from { width: 0; }
     to { width: attr(data-progress); }
-  }
-  
-  .subject-card p {
-    font-size: 0.9rem;
-    opacity: 0.9;
-    position: relative;
-    z-index: 1;
   }
   
   .math {
@@ -326,58 +262,6 @@
   
   .history {
     background: linear-gradient(135deg, #f8961e, #f3722c);
-  }
-  
-  .activity-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    color: var(--text);
-  }
-  
-  .activity-list {
-    background: var(--white);
-    border-radius: 0.8rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    overflow: hidden;
-  }
-  
-  .activity-item {
-    display: flex;
-    align-items: center;
-    padding: 1.2rem 1.5rem;
-    border-bottom: 1px solid var(--gray);
-    gap: 1rem;
-  }
-  
-  .activity-item:last-child {
-    border-bottom: none;
-  }
-  
-  .activity-item i {
-    font-size: 1.2rem;
-    color: var(--primary);
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(67, 97, 238, 0.1);
-    border-radius: 50%;
-  }
-  
-  .activity-item p {
-    flex: 1;
-    font-size: 0.95rem;
-  }
-  
-  .activity-item p strong {
-    color: var(--primary);
-    font-weight: 500;
-  }
-  
-  .time {
-    font-size: 0.8rem;
-    color: var(--text-light);
   }
   
   @media (max-width: 1024px) {

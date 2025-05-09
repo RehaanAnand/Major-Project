@@ -11,13 +11,17 @@ function handleSignup(event) {
     return;
   }
 
-  const userData = {
-    username: username,
-    email: email,
-    password: password
-  };
+  const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
 
-  localStorage.setItem('userData', JSON.stringify(userData));
+  if (existingUsers.some(user => user.username === username)) {
+    alert('Username already exists!');
+    return;
+  }
+
+  existingUsers.push({ username, email, password });
+  localStorage.setItem('users', JSON.stringify(existingUsers));
+
   alert('Account created successfully!');
-  window.location.href = 'login.html'; 
+  window.location.href = 'login.html';
 }
+
