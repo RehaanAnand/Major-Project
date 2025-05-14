@@ -9,9 +9,10 @@ function handleLogin(event) {
   const matchingUser = users.find(user => user.username === username && user.password === password);
 
   if (matchingUser) {
-    localStorage.setItem('activeUser', JSON.stringify(matchingUser));
-    window.location.href = "DASHBOARD.html";
+    localStorage.setItem("currentUser", username); 
+    alert("Login successful!");
+    window.location.href = "dashboard.html";
   } else {
-    alert("Incorrect username or password.");
+    alert("Invalid username or password.");
   }
 }

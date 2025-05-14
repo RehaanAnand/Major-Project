@@ -63,6 +63,15 @@ body {
     font-size: 20px;
 }
 
+.input-box i.toggle-password {
+    cursor: pointer;
+    color: #0e3f8f;
+}
+
+.input-box i.toggle-password:hover {
+    color: #4cc9f0;
+}
+
 .wrapper .btn {
     width: 100%;
     height: 45px;

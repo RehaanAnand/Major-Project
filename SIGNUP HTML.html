@@ -4,6 +4,8 @@
   <title>Study Station - Sign Up</title>
   <link rel="stylesheet" href="SIGNUP CSS.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 </head>
 <body>
 
@@ -21,14 +23,26 @@
       <i class='bx bxs-envelope'></i>
     </div>
 
+    <label for="subjects">Select Your Subjects</label>
+    <select id="subjects" multiple required>
+      <option value="Maths">Maths</option>
+      <option value="English">English</option>
+      <option value="Biology">Biology</option>
+      <option value="Chemistry">Chemistry</option>
+      <option value="Physics">Physics</option>
+      <option value="History">History</option>
+      <option value="Geography">Geography</option>
+      <option value="Computer Science">Computer Science</option>
+    </select>
+
     <div class="input-box">
       <input type="password" id="signup-password" placeholder="Password" required>
-      <i class='bx bxs-lock'></i>
+      <i class='bx bx-hide toggle-password' toggle="#signup-password"></i>
     </div>
 
     <div class="input-box">
       <input type="password" id="signup-confirm" placeholder="Confirm Password" required>
-      <i class='bx bxs-lock'></i>
+      <i class='bx bx-hide toggle-password' toggle="#signup-confirm"></i>
     </div>
 
     <button type="submit" class="btn">Sign Up</button>

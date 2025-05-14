@@ -196,73 +196,122 @@
     margin-bottom: 0.5rem;
     color: var(--text);
   }
-  
-  .subjects-section {
-    margin-bottom: 2.5rem;
-  }
-  
-  .subjects-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    color: var(--text);
-  }
-  
-  .subject-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-  }
-  
-  .subject-card {
-    padding: 1.5rem;
-    border-radius: 0.8rem;
-    color: var(--white);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
-    min-height: 180px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .subject-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
-  }
-  
-  .subject-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    position: relative;
-    z-index: 1;
-  }
-  
-  @keyframes progressAnimation {
-    from { width: 0; }
-    to { width: attr(data-progress); }
-  }
-  
-  .math {
-    background: linear-gradient(135deg, #4361ee, #3a0ca3);
-  }
-  
-  .science {
-    background: linear-gradient(135deg, #f72585, #b5179e);
-  }
-  
-  .english {
-    background: linear-gradient(135deg, #4cc9f0, #4895ef);
-  }
-  
-  .history {
-    background: linear-gradient(135deg, #f8961e, #f3722c);
-  }
+
+#dashboard-subjects {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#dashboard-subjects li {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+#dashboard-subjects li:hover {
+  transform: scale(1.03);
+}
+
+#dashboard-subjects li i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.subjects-grid li {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.subjects-grid li i {
+  font-size: 2rem;
+  margin-right: 12px;
+}
+
+.subject-math {
+  background-color: #e0f0ff;
+  color: #0077cc;
+}
+
+.subject-math i {
+  color: #0077cc;
+}
+
+.subject-english {
+  background-color: #fff3e6;
+  color: #ff8800;
+}
+
+.subject-english i {
+  color: #ff8800;
+}
+
+.subject-history {
+  background-color: #fce4ec;
+  color: #d81b60;
+}
+
+.subject-history i {
+  color: #d81b60;
+}
+
+.subject-chemistry {
+  background-color: #e8f5e9;
+  color: #388e3c;
+}
+
+.subject-chemistry i {
+  color: #388e3c;
+}
+
+.subject-physics {
+  background-color: #ede7f6;
+  color: #5e35b1;
+}
+
+.subject-physics i {
+  color: #5e35b1;
+}
+
+.subject-biology {
+  background-color: #f1f8e9;
+  color: #7cb342;
+}
+
+.subject-biology i {
+  color: #7cb342;
+}
+
+.subject-geography {
+  background-color: #e0f2f1;
+  color: #00897b;
+}
+
+.subject-geography i {
+  color: #00897b;
+}
+
   
   @media (max-width: 1024px) {
     .dashboard-nav {
