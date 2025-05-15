@@ -72,6 +72,50 @@ html, body {
   height: auto;
 }
 
+.banner {
+    height: 250px;
+    background-image: url('test.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-text {
+    color: #3f37c9;
+    font-size: 30px;
+    text-align: center;
+}
+
+.about-section {
+    background-color: var(--light);
+    padding: 80px 5% 60px;
+    color: var(--text);
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+}
+
+.about-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.about-container strong {
+    color: var(--secondary);
+}
+
 .footer {
     background-color: #0e3f8f;
     color: white;
