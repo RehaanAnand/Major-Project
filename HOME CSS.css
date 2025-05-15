@@ -43,11 +43,28 @@ html, body {
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
+  position: relative;
+  padding-bottom: 4px;
   transition: color 0.3s ease;
 }
 
-.topnav a:hover {
-  color: var(--secondary);
+.topnav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.topnav a:hover::after {
+  width: 100%;
+}
+
+.topnav a.active::after {
+  width: 100%;
 }
 
 .logo {

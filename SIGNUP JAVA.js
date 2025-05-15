@@ -73,5 +73,3 @@ function handleSignup(event) {
   alert("Signup successful! Please log in.");
   window.location.href = "login.html"
 }
-
-
