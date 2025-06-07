@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StudyStation - Resources</title>
+  <link rel="stylesheet" href="RESOURCES CSS.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <nav class="dashboard-nav">
+    <div class="nav-brand">
+      <img src="logo.png" alt="StudyStation" class="logo">
+    </div>
+    <div class="nav-links">
+      <a href="DASHBOARD.html"><i class="fas fa-house"></i> Dashboard</a>
+      <a href="RESOURCES.html" class="active"><i class ="fas fa-book"></i>Resources</a>
+      <a href="#videos"><i class="fas fa-play-circle"></i> Videos</a>
+      <a href="#tests"><i class="fas fa-edit"></i> Practice Tests</a>
+      <a href="#progress"><i class="fas fa-chart-line"></i> Progress</a>
+      <a href="PLANNER.html"><i class="fas fa-calendar-alt"></i> Study Plan</a>
+    </div>
+    <div class="nav-user">
+      <div class="user-dropdown">
+        <span>John Doe</span>
+        <i class="fas fa-caret-down"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="resources-container" id="subject-selection">
+    <h1 class="resources-title">Choose a Subject</h1>
+    <div class="subject-cards">
+      <div class="subject-card maths-card" onclick="showResources('maths')">
+        <div class="card-icon"><i class="fas fa-square-root-alt"></i></div>
+        <h2>Maths</h2>
+        <p>Formulas, worksheets, and practice problems</p>
+      </div>
+      <div class="subject-card english-card" onclick="showResources('english')">
+        <div class="card-icon"><i class="fas fa-book-open"></i></div>
+        <h2>English</h2>
+        <p>Grammar guides, literature notes, and essay tips</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="resources-container" id="maths-resources" style="display: none;">
+    <button class="back-button" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+    <h1>Maths Resources</h1>
+    <div class="resource-list">
+      <div class="resource-item">
+        <h3><i class="fas fa-file-pdf"></i> Algebra Cheat Sheet</h3>
+        <p>All essential formulas in one place.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="resources-container" id="english-resources" style="display: none;">
+    <button class="back-button" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+    <h1>English Resources</h1>
+    <div class="resource-list">
+      <div class="resource-item">
+        <h3><i class="fas fa-file-alt"></i> Essay Writing Guide</h3>
+        <p>Step-by-step instructions for top marks.</p>
+      </div>
+    </div>
+  </div>
+
+<script src="RESOURCES JAVA.js"></script>
+</body>
+</html>
