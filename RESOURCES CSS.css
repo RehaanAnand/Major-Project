@@ -148,11 +148,34 @@ body {
   background: linear-gradient(135deg, #f8961e, #f9a825);
 }
 
+#english-resources h1 {
+  color: var(--primary);
+}
+
+#maths-resources h1 {
+  color: var(--primary)
+}
+
 .resource-list {
   display: flex;
   flex-direction: column;
   gap: 15px;
   margin-top: 20px;
+}
+
+.open-btn {
+  background-color: var(--primary);
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.open-btn:hover {
+  background-color: var(--primary-light);
 }
 
 .resource-item {
@@ -169,6 +192,15 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.resource-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resource-text {
+  text-align: left;
 }
 
 .back-button {
