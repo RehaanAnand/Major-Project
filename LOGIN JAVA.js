@@ -11,7 +11,7 @@ function handleLogin(event) {
   if (matchingUser) {
     localStorage.setItem("currentUser", username); 
     alert("Login successful!");
-    window.location.href = "dashboard.html";
+    window.location.href = "home.html";
   } else {
     alert("Invalid username or password.");
   }
