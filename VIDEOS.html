@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StudyStation - Resources</title>
+  <link rel="stylesheet" href="VIDEOS CSS.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <nav class="dashboard-nav">
+    <div class="nav-brand">
+      <img src="logo.png" alt="StudyStation" class="logo">
+    </div>
+    <div class="nav-links">
+      <a href="DASHBOARD.html"><i class="fas fa-house"></i> Dashboard</a>
+      <a href="RESOURCES.html"><i class="fas fa-book"></i>Resources</a>
+      <a href="VIDEOS.html" class="active"><i class="fas fa-play-circle"></i>Videos</a>
+      <a href="#tests"><i class="fas fa-edit"></i> Practice Tests</a>
+      <a href="#progress"><i class="fas fa-chart-line"></i> Progress</a>
+      <a href="PLANNER.html"><i class="fas fa-calendar-alt"></i> Study Plan</a>
+    </div>
+    <div class="nav-user">
+      <div class="user-dropdown">
+        <span>John Doe</span>
+        <i class="fas fa-caret-down"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="resources-container" id="subject-selection">
+    <h1 class="resources-title">Choose A Subject</h1>
+    <div class="subject-cards">
+      <div class="subject-card maths-card" onclick="showResources('maths')">
+        <div class="card-icon"><i class="fas fa-square-root-alt"></i></div>
+        <h2>Maths</h2>
+        <p>Formulas, worksheets, and practice problems</p>
+      </div>
+      <div class="subject-card english-card" onclick="showResources('english')">
+        <div class="card-icon"><i class="fas fa-book-open"></i></div>
+        <h2>English</h2>
+        <p>Grammar guides, literature notes, and essay tips</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="resources-container" id="maths-resources" style="display: none;">
+  <button class="back-button" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+  <h1 class="resources-title">Maths Videos</h1>
+  <div class="video-list">
+    <div class="video-item">
+      <h3>Understanding Algebra Basics</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/NybHckSEQBI?si=UtHGmk2vH49eCwwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-item">
+      <h3>Fractions and Decimals Explained</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Mst8iZjIpFE?si=pGkQBumx5aRmn9gW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-item">
+      <h3>Understanding Angles Basics</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/DGKwdHMiqCg?si=INA3KK9MFFdgd2O4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<div class="resources-container" id="english-resources" style="display: none;">
+  <button class="back-button" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+  <h1 class="resources-title">English Videos</h1>
+  <div class="video-list">
+    <div class="video-item">
+      <h3>Grammar & Punctuation Basics</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/4IqlgGLV1XQ?si=mK8N9jqJ73j8KDzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-item">
+      <h3>Literary Devices Explained</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/OY2zPFQsKSI?si=sCLbVhcGzb0W7VE_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-item">
+      <h3>Essay Writing Guide</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/GNL1_tNTqpw?si=E0StlQaXaHoyfWaz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+  
+
+
+<script src="VIDEOS JAVA.js"></script>
+</body>
+</html>
