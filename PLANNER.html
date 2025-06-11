@@ -21,11 +21,17 @@
             <a href="PLANNER.html" class="active"><i class="fas fa-calendar-alt"></i> Study Plan</a>
         </div>
         <div class="nav-user">
-            <div class="user-dropdown">
-                <span>John Doe</span>
-                <i class="fas fa-caret-down"></i>
-            </div>
-        </div>
+  <div class="user-dropdown" onclick="toggleDropdown()">
+    <i class="fas fa-user-circle"></i>
+    <span id="username-display">John Doe</span>
+    <i class="fas fa-caret-down"></i>
+    <div class="dropdown-menu" id="dropdown-menu">
+      <button onclick="logout()" class="logout-btn">
+        <i class="fas fa-door-open"></i> Logout
+      </button>
+    </div>
+  </div>
+</div>
     </nav>
     
     <div class="container">
