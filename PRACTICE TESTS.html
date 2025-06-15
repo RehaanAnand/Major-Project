@@ -20,17 +20,40 @@
             <a href="#progress"><i class="fas fa-chart-line"></i> Progress</a>
             <a href="PLANNER.html"><i class="fas fa-calendar-alt"></i> Study Plan</a>
         </div>
+
         <div class="nav-user">
-            <div class="user-dropdown">
-                <span>John Doe</span>
+            <div class="user-dropdown" onclick="toggleDropdown()">
+                <i class="fas fa-user-circle"></i>
+                <span id="username-display">John Doe</span>
                 <i class="fas fa-caret-down"></i>
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <button onclick="logout()" class="logout-btn">
+                        <i class="fas fa-door-open"></i> Logout
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
 
     <div class="app">
-        <h1>Quiz</h1>
-        <div class="quiz">
+        <h1>Practice Tests</h1>
+        <div class="subject-selection" id="subject-selection">
+            <h2>Choose a subject to test yourself on:</h2>
+            <div class="subject-cards">
+                <div class="subject-card maths-card" onclick="startQuiz('maths')">
+                    <i class="fas fa-calculator card-icon"></i>
+                    <h3>Mathematics</h3>
+                </div>
+                <div class="subject-card english-card" onclick="startQuiz('english')">
+                    <i class="fas fa-book-open card-icon"></i>
+                    <h3>English</h3>
+                </div>
+            </div>
+        </div>
+
+        <div id="progress"></div>
+        
+        <div class="quiz" id="quiz" style="display: none;">
             <h2 id="question">Question goes here</h2>
             <div id="answer-buttons">
                 <button class="btn">Answer 1</button>
