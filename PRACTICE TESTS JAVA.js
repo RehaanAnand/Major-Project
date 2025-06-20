@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (userSpan) {
     userSpan.textContent = currentUser.username;
   }
-});1
+});
 
 const mathQuestions = [
     {
