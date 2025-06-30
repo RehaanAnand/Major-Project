@@ -26,11 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const iconMap = {
     math: "fas fa-square-root-alt",
     english: "fas fa-book",
-    history: "fas fa-landmark",
-    chemistry: "fas fa-flask",
-    physics: "fas fa-atom",
-    biology: "fas fa-dna",
-    geography: "fas fa-globe-europe"
   };
 
   const iconClass = iconMap[key] || "fas fa-book-open";

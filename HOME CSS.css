@@ -308,51 +308,6 @@
   color: #ff8800;
 }
 
-.subject-history {
-  background-color: #fce4ec;
-  color: #d81b60;
-}
-
-.subject-history i {
-  color: #d81b60;
-}
-
-.subject-chemistry {
-  background-color: #e8f5e9;
-  color: #388e3c;
-}
-
-.subject-chemistry i {
-  color: #388e3c;
-}
-
-.subject-physics {
-  background-color: #ede7f6;
-  color: #5e35b1;
-}
-
-.subject-physics i {
-  color: #5e35b1;
-}
-
-.subject-biology {
-  background-color: #f1f8e9;
-  color: #7cb342;
-}
-
-.subject-biology i {
-  color: #7cb342;
-}
-
-.subject-geography {
-  background-color: #e0f2f1;
-  color: #00897b;
-}
-
-.subject-geography i {
-  color: #00897b;
-}
-
   
   @media (max-width: 1024px) {
     .dashboard-nav {
