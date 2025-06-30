@@ -140,3 +140,10 @@ body {
 .logout-btn:hover {
   color: var(--primary); 
 }
+
+.tableauPlaceholder {
+  max-width: 900px;
+  margin: 2rem auto;
+  height: auto;
+  aspect-ratio: 4 / 3;
+}
